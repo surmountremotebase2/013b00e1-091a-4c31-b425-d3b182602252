@@ -28,10 +28,10 @@ class TradingStrategy(Strategy):
             ema_long = EMA(ticker, ohlcv_data, self.ema_length_long)
             atr = ATR(ticker, ohlcv_data, self.atr_length)
 
-            #if len(ema_short) == 0 or len(ema_long) == 0 or len(atr) == 0:
-            #    log(f"Insufficient data for trading: {ticker}")
-            #    allocation_dict[ticker] = 0
-            #    continue
+            if len(ema_short) == 0 or len(ema_long) == 0 or len(atr) == 0:
+                log(f"Insufficient data for trading: {ticker}")
+                allocation_dict[ticker] = 0
+                continue
 
             current_price = ohlcv_data[-1][ticker]["close"]
             ema_short_latest = ema_short[-1]
