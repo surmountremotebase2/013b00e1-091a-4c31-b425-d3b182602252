@@ -62,4 +62,4 @@ class TradingStrategy(Strategy):
     def hold_long_enough(self):
         # Simplification: assuming "long enough" means a predetermined period, e.g., over 30 days for this example
         # In reality, this should compare with actual tax policy periods, e.g., 1 year for long-term capital gains
-        return len(self.recent_trades) > 30  # This is a mock-up function for demonstration. Implement accordingly.
+        return len(self.recent_trades) > 365  # This is a mock-up function for demonstration. Implement accordingly.
