@@ -8,8 +8,8 @@ class TradingStrategy(Strategy):
         self.ticker = "CYBN"
         # Historical peak price since the last buying point
         self.historical_peak = None
-        # Stop loss percentage (20% drop from the peak)
-        self.stop_loss_percent = 0.20
+        # Stop loss percentage (5% drop from the peak)
+        self.stop_loss_percent = 0.5
 
     @property
     def assets(self):
