@@ -7,7 +7,7 @@ class TradingStrategy(Strategy):
         self.ticker = "CYBN"  # Replace with the correct ticker if different
         self.short_ema_length = 12
         self.long_ema_length = 26
-        self.stop_loss_perc = 0.95  # 5% stop loss
+        self.stop_loss_perc = 15  # 5% stop loss
         self.initial_investment_flag = True
         self.entry_price = 0
         
