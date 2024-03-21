@@ -13,7 +13,7 @@ class TradingStrategy(Strategy):
 
     def __init__(self):
         # Define the penny stock tickers you're interested in.
-        self.tickers = ["PENNY1", "PENNY2", "PENNY3"]
+        self.tickers = ["CYBN"]
         self.lookback_window = 30  # Lookback period for indicators.
 
     @property
