@@ -9,7 +9,7 @@ class TradingStrategy(Strategy):
         # Assuming penny stocks are those priced below $5; you can adjust this value.
         self.max_price = 5  
         # Customize this list with the tickers of your interest or dynamically fetch penny stocks tickers
-        self.tickers = ["PENNY1", "PENNY2", "PENNY3", "PENNY4"]
+        self.tickers = ["CYBN"]
         self.data_list = [Asset(i) for i in self.tickers]
 
     @property
