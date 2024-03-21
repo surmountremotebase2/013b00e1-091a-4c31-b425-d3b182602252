@@ -8,7 +8,7 @@ class TradingStrategy(Strategy):
         self.entry_buffer = 1.02  # Buffer for entry above the upper band
         self.exit_buffer = 0.98  # Buffer for stop loss below the lower band
         # Initial stop loss can be set more strategically based on historical data analysis
-        self.initial_stop_loss = 0.98  # Dynamically updated based on entry
+        self.initial_stop_loss = 0.9  # Dynamically updated based on entry
 
     @property
     def assets(self):
