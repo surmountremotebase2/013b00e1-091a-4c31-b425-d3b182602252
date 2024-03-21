@@ -1,5 +1,5 @@
-from surmount.base_class import Strategy, TargetAllocation
-from surmount.technical_indicators import SMA, Momentum
+from surmount.base_class import *
+from surmount.technical_indicators import *
 from surmount.data import *
 import pandas as pd
 
