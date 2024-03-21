@@ -12,7 +12,7 @@ class TradingStrategy(Strategy):
         self.sell_date = None
         self.initial_investment = 0.0  # Placeholder, should be set based on portfolio size or capital allocation strategy
         self.stop_loss_percentage = 0.15  # 15% stop loss
-        self.minimum_hold_period = timedelta(days=365)  # 1 year minimum hold period
+        self.minimum_hold_period = timedelta(days=1)  # 1 year minimum hold period
     
     @property
     def assets(self):
