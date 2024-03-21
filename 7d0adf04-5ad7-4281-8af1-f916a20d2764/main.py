@@ -7,7 +7,7 @@ class TradingStrategy(Strategy):
         self.ticker = "CYBN"
         self.entry_rsi_threshold = 30  # RSI level to consider entry
         self.exit_rsi_threshold = 70  # RSI level to consider exit
-        self.stop_loss_percent = 0.10  # 10% stop loss
+        self.stop_loss_percent = 0.20  # 20% stop loss
         self.holding_period = 30  # Minimum holding period in days for tax efficiency
         self.last_buy_price = None  # Track last buy price
         self.buy_date = None  # Track when the stock was bought
