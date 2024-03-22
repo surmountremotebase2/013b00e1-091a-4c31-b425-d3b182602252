@@ -9,6 +9,7 @@ class TradingStrategy(Strategy):
         self.mnmd_ticker = "MNMD"
         self.entry_price = None  # To keep track of entry price for stop loss calculation
         self.stop_loss_percent = 0.1  # 10% stop loss
+        cybn_holdings = 0
 
     @property
     def assets(self):
