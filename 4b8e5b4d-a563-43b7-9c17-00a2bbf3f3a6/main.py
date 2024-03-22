@@ -5,8 +5,8 @@ from surmount.logging import log
 class TradingStrategy(Strategy):
     def __init__(self):
         self.buy_price = None  # Tracks the buying price of CYBN
-        self.stop_loss = 0.20  # Stop-loss threshold (5% drop)
-        self.take_profit = 0.20  # Take profit threshold (10% increase)
+        self.stop_loss = 0.5  # Stop-loss threshold (5% drop)
+        self.take_profit = 0.10  # Take profit threshold (10% increase)
         self.tickers = ["CYBN", "MNMD"]
 
     @property
