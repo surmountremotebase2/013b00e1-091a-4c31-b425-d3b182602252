@@ -6,7 +6,7 @@ class TradingStrategy(Strategy):
     def __init__(self):
         self.ticker = "CYBN"
         self.entry_rsi = 30 
-        self.stop_loss_multiplier = 3 
+        self.stop_loss_multiplier = 2 
         self.entry = False 
         self.stop_loss_price = 0 
 
@@ -26,14 +26,6 @@ class TradingStrategy(Strategy):
         atr = ATR(self.ticker, data["ohlcv"], 14)[-1]
 
         allocation = 0
-
-        if self.entry:
-            # Exit strategy based on stop loss
-            if current_price <= self.stop_loss_price:
-                self.entry = False
-                log(f"Exiting position for {self.ticker} at stop loss.")
-            else:
-                allocation = 1
 
         if not self.entry:
             # Entry conditions checking
