@@ -15,7 +15,7 @@ class TradingStrategy(Strategy):
     @property
     def interval(self):
         # Use daily interval for the strategy
-        return "1day"
+        return "1hour"
     
     def run(self, data):
         # Initial empty allocation, assuming we start with no position
