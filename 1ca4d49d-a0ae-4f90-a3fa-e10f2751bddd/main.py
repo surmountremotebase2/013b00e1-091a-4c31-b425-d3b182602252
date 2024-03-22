@@ -10,7 +10,7 @@ class TradingStrategy(Strategy):
         # How much of our portfolio to allocate to our trade_ticker
         self.trading_allocation = 1.0
         # Stop Loss Percentage (e.g., 0.05 for 5%)
-        self.stop_loss_percentage = 0.20
+        self.stop_loss_percentage = 0.35
         # Keep track of buying price for calculating stop loss
         self.buying_price = None
 
