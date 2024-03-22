@@ -6,7 +6,7 @@ class TradingStrategy(Strategy):
     def __init__(self):
         self.ticker = "CYBN"
         self.entry_rsi = 30 
-        self.stop_loss_multiplier = 2 
+        self.stop_loss_multiplier = 3 
         self.entry = False 
         self.stop_loss_price = 0 
 
