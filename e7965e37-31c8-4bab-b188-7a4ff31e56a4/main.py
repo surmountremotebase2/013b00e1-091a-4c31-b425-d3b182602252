@@ -7,7 +7,7 @@ from surmount.data import Asset
 class TradingStrategy(Strategy):
     def __init__(self):
         # Define the tickers of biotech stocks. Including CYBN.
-        self.tickers = ["CYBN", "IBB", "XBI", "GILD", "AMGN"]
+        self.tickers = ["CYBN"]
     
     @property
     def interval(self):
