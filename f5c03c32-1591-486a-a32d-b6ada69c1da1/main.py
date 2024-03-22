@@ -27,7 +27,7 @@ class TradingStrategy(Strategy):
 
         allocation = 0
 
-        if not self.entry:
+        if self.entry:
             # Entry conditions checking
             if rsi < self.entry_rsi and current_price <= bb["lower"][-1]:
                 self.entry = True
