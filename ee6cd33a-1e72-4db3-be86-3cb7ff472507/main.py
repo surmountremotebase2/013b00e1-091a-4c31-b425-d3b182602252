@@ -48,14 +48,3 @@ class TradingStrategy(Strategy):
                 self.initial_investment = True  # Indicate that QCOM has been purchased
 
         return TargetAllocation(allocation_dict)
-
-    @property
-    def current_holdings(self):
-        # Mock function to simulate current holdings state
-        # In actual implementation, this information would be provided by the Surmount platform
-        return {
-            "QCOM": {
-                "quantity": 100,  # Assuming 100 shares are held
-                "averagePrice": 150  # Assuming the average purchase price is $150
-            }
-        }
