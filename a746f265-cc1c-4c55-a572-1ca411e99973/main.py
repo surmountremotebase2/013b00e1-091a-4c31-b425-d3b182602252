@@ -44,9 +44,6 @@ class TradingStrategy(Strategy):
                 if price_drop >= self.stop_loss:
                     log("Selling CYBN due to stop loss")
                     self.buy_price = None  # Reset buying price
-                elif price_gain >= self.take_profit:
-                    log("Selling CYBN to take profit")
-                    self.buy_price = None  # Reset buying price
                 else:
                     # Hold the position if neither stop loss nor take profit conditions are met
                     allocation_dict["CYBN"] = 1
